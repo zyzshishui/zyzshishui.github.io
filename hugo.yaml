@@ -1,0 +1,118 @@
+baseURL: "https://zyzshishui.github.io/"
+title: "zyzshishui's Blog"
+theme: ["PaperMod"]
+
+defaultContentLanguage: zh
+defaultContentLanguageInSubdir: false
+enableEmoji: true
+enableInlineShortcodes: true
+enableRobotsTXT: true
+pygmentsUseClasses: true
+
+pagination:
+  pagerSize: 10
+
+minify:
+  disableXML: true
+
+disableKinds:
+  - taxonomy
+  - term
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+languages:
+  zh:
+    label: "中文"
+    locale: "zh-CN"
+    contentDir: "content/zh"
+    weight: 1
+    menu:
+      main:
+        - name: 关于
+          url: about/
+          weight: 5
+        - name: 文章
+          url: posts/
+          weight: 10
+        - name: 搜索
+          url: search/
+          weight: 40
+    params:
+      languageAltTitle: "中文"
+      homeInfoParams:
+        Title: "zyzshishui's Blog"
+        Content: ""
+
+  en:
+    label: "English"
+    locale: "en-US"
+    contentDir: "content/en"
+    weight: 2
+    menu:
+      main:
+        - name: About
+          url: about/
+          weight: 5
+        - name: Posts
+          url: posts/
+          weight: 10
+        - name: Search
+          url: search/
+          weight: 40
+    params:
+      languageAltTitle: "English"
+      homeInfoParams:
+        Title: "zyzshishui's Blog"
+        Content: ""
+
+params:
+  env: production
+  author: "zyzshishui"
+  defaultTheme: auto
+  displayFullLangName: true
+  disableSpecial1stPost: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowPageNums: true
+  ShowPostNavLinks: true
+  ShowReadingTime: true
+  ShowToc: true
+  TocOpen: false
+  mainSections:
+    - posts
+
+  socialIcons:
+    - name: github
+      title: GitHub
+      url: "https://github.com/zyzshishui"
+    - name: linkedin
+      title: LinkedIn
+      url: "https://www.linkedin.com/in/yuzhen-zhou/"
+
+  assets:
+    disableHLJS: true
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys:
+      - title
+      - permalink
+      - summary
+      - content
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
