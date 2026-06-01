@@ -2,7 +2,7 @@ baseURL: "https://zyzshishui.github.io/"
 title: "zyzshishui's Blog"
 theme: ["PaperMod"]
 
-defaultContentLanguage: zh
+defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
 enableEmoji: true
 enableInlineShortcodes: true
@@ -30,7 +30,7 @@ languages:
     label: "中文"
     locale: "zh-CN"
     contentDir: "content/zh"
-    weight: 1
+    weight: 2
     menu:
       main:
         - name: 关于
@@ -52,7 +52,7 @@ languages:
     label: "English"
     locale: "en-US"
     contentDir: "content/en"
-    weight: 2
+    weight: 1
     menu:
       main:
         - name: About
